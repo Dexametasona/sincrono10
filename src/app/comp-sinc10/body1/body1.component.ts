@@ -1,3 +1,4 @@
+import { MensajeService } from './../../service/mensaje.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,8 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Body1Component implements OnInit {
 
-  constructor() { }
+  constructor(private almacenarService:MensajeService) { }
 
+  almacenar(tarea:string, descripcion:string){
+    this.almacenarService.almacenarTareas(tarea,descripcion)
+  }
   ngOnInit(): void {
   }
 

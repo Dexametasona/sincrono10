@@ -4,6 +4,10 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class MensajeService {
+  almacenTareaClon:string[]=[]
+  almacenarTareas(tarea:string,descripcion:string){
+      this.almacenTareaClon.push(tarea+': '+descripcion)
+  }
 
   constructor() { }
 }

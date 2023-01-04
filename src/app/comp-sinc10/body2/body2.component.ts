@@ -1,3 +1,4 @@
+import { MensajeService } from './../../service/mensaje.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./body2.component.scss']
 })
 export class Body2Component implements OnInit {
+  almacenTareas:string[]=[]
+  
 
-  constructor() { }
+  constructor(private almacenService:MensajeService) { }
 
   ngOnInit(): void {
+    this.almacenTareas=this.almacenService.almacenTareaClon
   }
 
 }
