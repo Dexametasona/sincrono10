@@ -2,8 +2,13 @@
     display: flex;
     align-items: center;
     background-color: rgba(128, 128, 128, 0.459);
+    height: 5rem;
+    border-radius: 10px;
 }
 img{
-    height: 5rem;
-    width: 5rem;
+    background-color: white;
+    padding: 0.5px;
+    margin-left: 5px;
+    height: 4rem;
+    width: 4rem;
 }

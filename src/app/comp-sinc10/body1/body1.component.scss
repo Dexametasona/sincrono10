@@ -6,3 +6,12 @@
     width: 40%;
     border: solid 2px rgba(128, 128, 128, 0.541);
 }
+button{
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        transform: scale(1.1,1.1);
+    }
+}
+.rotar{
+    transform: rotate(3turn);
+}

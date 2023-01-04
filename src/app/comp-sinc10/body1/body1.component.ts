@@ -7,11 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./body1.component.scss']
 })
 export class Body1Component implements OnInit {
+  tarea='';
+  descript='';
 
   constructor(private almacenarService:MensajeService) { }
 
-  almacenar(tarea:string, descripcion:string){
-    this.almacenarService.almacenarTareas(tarea,descripcion)
+  almacenar(){
+    this.almacenarService.almacenarTareas(this.tarea,this.descript)
+    this.tarea='';
+    this.descript='';
   }
   ngOnInit(): void {
   }

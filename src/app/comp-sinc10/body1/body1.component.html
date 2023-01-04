@@ -1,3 +1,3 @@
-<input type="text" placeholder="ingrese nombre tarea" class="border-2 w-4/5 rounded-md p-1 my-3" #tarea>
-<textarea rows="10" placeholder="Ingresa Descripción" class="border-2 w-4/5 rounded-md p-1 my-3" #descript></textarea>
-<button class="border-2 border-cyan-500 p-2 rounded-md drop-shadow-lg bg-blue-400 mb-3" (click)="almacenar(tarea.value, descript.value)">Guardar</button>
+<input type="text" placeholder="ingrese nombre tarea" class="border-2 w-4/5 rounded-md p-1 my-3" [(ngModel)]="tarea">
+<textarea rows="10" placeholder="Ingresa Descripción" class="border-2 w-4/5 rounded-md p-1 my-3" [(ngModel)]="descript"></textarea>
+<button class="border-2 border-cyan-500 p-2 rounded-md drop-shadow-lg bg-blue-400 mb-3" (click)="almacenar()">Guardar</button>
