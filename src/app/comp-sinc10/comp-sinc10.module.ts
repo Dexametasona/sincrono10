@@ -16,6 +16,12 @@ import { Body2Component } from './body2/body2.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    HeaderComponent,
+    FooterComponent,
+    Body1Component,
+    Body2Component
   ]
 })
 export class CompSinc10Module { }
